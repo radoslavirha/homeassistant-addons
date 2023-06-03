@@ -2,7 +2,7 @@
   "name": "Data Feeder for LaskaKit interactive map of Czech republic",
   "description": "Data Feeder for LaskaKit interactive map of Czech republic",
   "slug": "data_feeder_laskakit_interactive_map_cr",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "arch": [
     "aarch64",
     "amd64",
