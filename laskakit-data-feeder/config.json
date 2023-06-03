@@ -1,0 +1,32 @@
+{
+  "name": "Data Feeder for LaskaKit interactive map of Czech republic",
+  "description": "Data Feeder for LaskaKit interactive map of Czech republic",
+  "slug": "data_feeder_laskakit_interactive_map_cr",
+  "version": "0.3.4",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"
+  ],
+  "url": "https://github.com/radoslavirha/ha-addon-laskakit-data-feeder.git",
+  "init": "false",
+  "startup": "application",
+  "hassio_role": "default",
+  "panel_icon": "mdi:map-outline",
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "options": {
+    "image_to_console": false,
+    "laskakit_url": null,
+    "log_level": "info"
+  },
+  "schema": {
+    "image_to_console": "bool",
+    "laskakit_url": "url",
+    "log_level": "list(debug|info|warn|error)?"
+  },
+  "image": "radoslavirha/ha-addon-laskakit-data-feeder-{arch}"
+}

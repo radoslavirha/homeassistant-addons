@@ -1,7 +1,4 @@
-# Homeassistant Radoslav's Add-ons
-
-[![License][license-shield]](LICENSE.md)
-
+# Radoslav's Homeassistant Add-ons
 
 ## About
 
@@ -17,11 +14,11 @@ https://github.com/radoslavirha/homeassistant-addons.git
 
 ## Add-ons provided by this repository
 
-### &#10003; [LaskaKit data feeder][https://github.com/radoslavirha/ha-addon-laskakit-data-feeder]
+### &#10003; [LaskaKit data feeder][addon-laskakit-data-feeder]
 
 Processes data from the ČHMÚ precipitation radar and sends it to the pre-programmed [LaskaKit](https://www.laskakit.cz/laskakit-interaktivni-mapa-cr-ws2812b/).
 
-[:books: LaskaKit data feeder add-on documentation][https://github.com/radoslavirha/ha-addon-laskakit-data-feeder]
+[:books: LaskaKit data feeder add-on documentation][addon-laskakit-data-feeder-docs]
 
 ## Releases
 
@@ -39,7 +36,7 @@ You could also open an issue here on GitHub. Note, I use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
-- [Open an issue for the add-on: LaskaKit data feeder][https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/issues]
+- [Open an issue for the add-on: LaskaKit data feeder][addon-laskakit-data-feeder-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 
@@ -48,3 +45,10 @@ For a general repository issue or add-on ideas [open an issue here][issue]
 Please contact [me Radoslav Irha][radoslavirha]:
 
 - email: radoslav.irha@gmail.com
+
+[radoslavirha]: https://github.com/radoslavirha
+[issue]: https://github.com/radoslavirha/homeassistant-addons/issues
+
+[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder
+[addon-laskakit-data-feeder-docs]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder
+[addon-laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/issues
