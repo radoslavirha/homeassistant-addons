@@ -67,11 +67,7 @@ Please contact [me Radoslav Irha][radoslavirha]:
 [laskakit-data-feeder-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [laskakit-data-feeder-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [laskakit-data-feeder-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[awesome-shield]: https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg
-[awesome]: https://awesome-ha.com
 [radoslavirha]: https://github.com/radoslavirha
-[gitlabci-shield]: https://gitlab.com/radoslavirha/homeassistant-addons/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/radoslavirha/homeassistant-addons/pipelines
 [issue]: https://github.com/radoslavirha/homeassistant-addons/issues
 [license-shield]: https://img.shields.io/github/license/radoslavirha/homeassistant-addons.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
