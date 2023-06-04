@@ -10,5 +10,5 @@ This add-on is basically a Node.js server that processes data from the ČHMÚ pr
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v0.1.12-blue.svg
-[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.12
+[release-shield]: https://img.shields.io/badge/version-v0.1.14-blue.svg
+[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.14
