@@ -1,3 +1,5 @@
 ## What’s Changed
 
-* No changes
+## 📃 Documents
+
+- docs: add Changelog link to Readme @radoslavirha (#6)

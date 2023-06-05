@@ -57,5 +57,5 @@ Add more data sources!
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v0.1.28-blue.svg
-[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.28
+[release-shield]: https://img.shields.io/badge/version-v0.1.1-blue.svg
+[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.1
