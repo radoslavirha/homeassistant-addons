@@ -58,10 +58,10 @@ Please contact [me Radoslav Irha][radoslavirha]:
 - email: radoslav.irha@gmail.com
 
 
-[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.1
-[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/blob/v0.1.1/README.md
+[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.0
+[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/blob/v0.2.0/README.md
 [laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/issues
-[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-v0.1.1-blue.svg
+[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-v0.2.0-blue.svg
 [laskakit-data-feeder-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [laskakit-data-feeder-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [laskakit-data-feeder-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg

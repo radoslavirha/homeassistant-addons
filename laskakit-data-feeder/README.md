@@ -51,11 +51,20 @@ Downloads precipitation image from ČHMÚ, process and send data to LaskaKit
 - `pixelBuffer` (default 0) - a pixel buffer around the city, used to determine if it is raining at a given location. The resulting value is the maximum R,G,B value of the selected pixels
   - E.g. `{laskakit_url}?pixelBuffer=2`
 
+### GET /rain/image
+
+Downloads precipitation image from ČHMÚ, creates current image and returns joined image
+
+#### Query parameters
+
+- `pixelBuffer` (default 0) - a pixel buffer around the city, used to determine if it is raining at a given location. The resulting value is the maximum R,G,B value of the selected pixels
+  - E.g. `{laskakit_url}?pixelBuffer=2`
+
 ## Future
 
 Add more data sources!
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v0.1.1-blue.svg
-[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.1.1
+[release-shield]: https://img.shields.io/badge/version-v0.2.0-blue.svg
+[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.0

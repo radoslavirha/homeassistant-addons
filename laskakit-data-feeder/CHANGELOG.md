@@ -1,5 +1,5 @@
 ## What’s Changed
 
-## 📃 Documents
+## 🚀 Features
 
-- docs: add Changelog link to Readme @radoslavirha (#6)
+- feat: ✨ new /rain/image endpoint @radoslavirha (#7)
