@@ -18,7 +18,7 @@ https://github.com/radoslavirha/homeassistant-addons
 
 ## Add-ons provided by this repository
 
-### &#10003; [Data Feeder for LaskaKit interactive map of Czech republic][addon-laskakit-data-feeder]
+### &#10003; [LaskaKit data feeder][addon-laskakit-data-feeder]
 
 ![Latest Version][laskakit-data-feeder-version-shield]
 ![Supports armhf Architecture][laskakit-data-feeder-armhf-shield]
@@ -27,9 +27,9 @@ https://github.com/radoslavirha/homeassistant-addons
 ![Supports amd64 Architecture][laskakit-data-feeder-amd64-shield]
 ![Supports i386 Architecture][laskakit-data-feeder-i386-shield]
 
-Data Feeder for LaskaKit interactive map of Czech republic
+LaskaKit data feeder
 
-[:books: Data Feeder for LaskaKit interactive map of Czech republic add-on documentation][addon-doc-laskakit-data-feeder]
+[:books: LaskaKit data feeder add-on documentation][addon-doc-laskakit-data-feeder]
 
 ## Releases
 
@@ -47,7 +47,7 @@ You could also open an issue here on GitHub. Note, I use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
-- [Open an issue for the add-on: Data Feeder for LaskaKit interactive map of Czech republic][laskakit-data-feeder-issue]
+- [Open an issue for the add-on: LaskaKit data feeder][laskakit-data-feeder-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 

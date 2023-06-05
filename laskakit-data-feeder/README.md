@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Data feeder for LaskaKit interactive map of Czech republic
+# Home Assistant Add-on: LaskaKit data feeder
 
 [![Release][release-shield]][release] ![Project Stage][project-stage-shield] ![Project Maintenance][maintenance-shield]
 

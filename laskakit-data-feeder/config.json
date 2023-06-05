@@ -1,5 +1,5 @@
 {
-  "name": "Data Feeder for LaskaKit interactive map of Czech republic",
+  "name": "LaskaKit data feeder",
   "description": "Data Feeder for LaskaKit interactive map of Czech republic",
   "slug": "laskakitdatafeeder",
   "version": "0.1.21",
