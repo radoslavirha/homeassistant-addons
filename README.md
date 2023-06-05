@@ -27,7 +27,7 @@ https://github.com/radoslavirha/homeassistant-addons
 ![Supports amd64 Architecture][laskakit-data-feeder-amd64-shield]
 ![Supports i386 Architecture][laskakit-data-feeder-i386-shield]
 
-LaskaKit data feeder
+Data Feeder for LaskaKit interactive map of Czech republic
 
 [:books: LaskaKit data feeder add-on documentation][addon-doc-laskakit-data-feeder]
 
