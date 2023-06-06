@@ -37,7 +37,7 @@ rest_command:
 ## Add-on REST API
 
 <details>
-  <summary><code>GET</code> <code><b>/documentation</b></code> <code>(Swagger documentation)</code></summary>
+  <summary><code>GET</code> <code><b>/documentation</b></code> <code>(Swagger documentation UI)</code></summary>
 </details>
 
 <details>
@@ -48,6 +48,21 @@ Query Parameters
 > | name        | type      | data type | default | description                                 |
 > |-------------|-----------|-----------|---------|---------------------------------------------|
 > | pixelBuffer | optional  | int       | 0       | Pixel buffer around the city                |
+
+Responses
+
+> | http code     | content-type              | response                          |
+> |---------------|---------------------------|-----------------------------------|
+> | `200`         | `application/json`        | Array of cities sent to LaskaKit  |
+> | `400`         | `application/json`        | Boom error                        |
+
+Example cURL
+
+> ```javascript
+> curl -X GET http://0.0.0.0:8000/rain
+> curl -X GET http://0.0.0.0:8000/rain?pixelBuffer=5
+> ```
+
 </details>
 
 <details>
@@ -58,6 +73,21 @@ Query Parameters
 > | name        | type      | data type | default | description                                 |
 > |-------------|-----------|-----------|---------|---------------------------------------------|
 > | pixelBuffer | optional  | int       | 0       | Pixel buffer around the city                |
+
+Responses
+
+> | http code     | content-type              | response                            |
+> |---------------|---------------------------|-------------------------------------|
+> | `200`         | `image/png`               | Radar and current conditions image  |
+> | `400`         | `application/json`        | Boom error                          |
+
+Example cURL
+
+> ```javascript
+> curl -X GET http://0.0.0.0:8000/rain/image
+> curl -X GET http://0.0.0.0:8000/rain/image?pixelBuffer=5
+> ```
+
 </details>
 
 Swagger UI does not show parsed payload/params/query/headers validators. It's built for Joi, not Zod. Requested feature: https://github.com/hapi-swagger/hapi-swagger/issues/804#issue-1734729569

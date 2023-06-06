@@ -1,3 +1,5 @@
 ## What’s Changed
 
-updated docs
+## 📃 Documents
+
+- docs: 📝 update REST API docs @radoslavirha (#9)
