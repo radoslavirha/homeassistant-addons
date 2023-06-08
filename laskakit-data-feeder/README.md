@@ -14,5 +14,5 @@ Homeassistant automation calls `laskakit_feeder_rain` rest_command service, add-
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v0.2.6-blue.svg
-[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.6
+[release-shield]: https://img.shields.io/badge/version-v0.2.7-blue.svg
+[release]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.7

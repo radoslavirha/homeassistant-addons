@@ -1,3 +1,3 @@
 ## What’s Changed
 
-ingress port testing
+- chore: Remove workspaces @radoslavirha (#10)
