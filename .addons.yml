@@ -1,6 +1,6 @@
 channel: stable
 addons:
   laskakit-data-feeder:
-    repository: radoslavirha/ha-addon-laskakit-data-feeder
-    target: laskakit-data-feeder
+    repository: radoslavirha/ha-addons
+    target: addons/laskakit-data-feeder
     image: radoslavirha/ha-addon-laskakit-data-feeder-{arch}

@@ -59,14 +59,14 @@ For a general repository issue or add-on ideas [open an issue here][issue]
 
 Please contact [me Radoslav Irha][radoslavirha]:
 
-- email: radoslav.irha@gmail.com
-
+- email: <radoslav.irha@gmail.com>
 
 {% for addon in addons %}
-[addon-{{ addon.target }}]: {{ addon.repo }}/tree/{{ addon.version }}
-[addon-doc-{{ addon.target}}]: {{ addon.repo }}/blob/{{ addon.version }}/README.md
+[addon-{{ addon.target }}]: {{ addon.repo }}/tree/{{ addon.version }}/{{ addon.target }}/README.md
+[addon-doc-{{ addon.target}}]: {{ addon.repo }}/blob/{{ addon.version }}/{{ addon.target }}/README.md
 [{{ addon.target }}-issue]: {{ addon.repo }}/issues
-[{{ addon.target }}-version-shield]: https://img.shields.io/badge/version-{{ addon.version }}-blue.svg
+<!-- [{{ addon.target }}-version-shield]: https://img.shields.io/badge/version-{{ addon.version }}-blue.svg -->
+[{{ addon.target }}-version-shield]: https://img.shields.io/badge/dynamic/json?label=Version&query=$.version&url=https://raw.githubusercontent.com/{{ addon.name }}/master/{{ addon.target }}/config.json
 {% for arch in ['aarch64', 'amd64', 'armhf', 'armv7', 'i386'] %}
 {% if arch in addon.archs %}
 [{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-yes-green.svg
