@@ -1,3 +1,3 @@
 ## What’s Changed
 
-ingress test
+- chore: Remove workspaces @radoslavirha (#10)

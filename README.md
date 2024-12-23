@@ -57,8 +57,8 @@ Please contact [me Radoslav Irha][radoslavirha]:
 
 - email: <radoslav.irha@gmail.com>
 
-[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.5
-[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/blob/v0.2.5/README.md
+[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.7
+[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/blob/v0.2.7/README.md
 [laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/issues
 [laskakit-data-feeder-version-shield]: https://img.shields.io/badge/dynamic/json?label=Version&query=$.version&url=https://raw.githubusercontent.com/radoslavirha/ha-addons/master/addons/laskakit-data-feeder/config.json
 <!-- [laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-v0.2.5-blue.svg -->
