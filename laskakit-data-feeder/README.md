@@ -2,7 +2,7 @@
 
 [![Release][release-shield]][release] ![Project Stage][project-stage-shield] ![Project Maintenance][maintenance-shield]
 
-This add-on is insired by https://github.com/jakubcizek/pojdmeprogramovatelektroniku/tree/master/SrazkovyRadar.
+This add-on is insired by <https://github.com/jakubcizek/pojdmeprogramovatelektroniku/tree/master/SrazkovyRadar>.
 
 ## Description
 
