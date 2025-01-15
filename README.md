@@ -1,4 +1,4 @@
-# Radoslav's Homeassistant Add-ons
+# Radoslav's Home Assistant Add-ons repository
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
@@ -13,7 +13,7 @@ You can find here my personal add-ons
 In Home Assistant go to `Settings` > `Add-ons` > `Add-on Store` > dots top-right > `Repositories` and add the repository URL:
 
 ```txt
-https://github.com/radoslavirha/homeassistant-addons
+https://github.com/radoslavirha/ha-addons-repository
 ```
 
 ## Add-ons provided by this repository
@@ -68,8 +68,8 @@ Please contact [me Radoslav Irha][radoslavirha]:
 [laskakit-data-feeder-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [laskakit-data-feeder-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [radoslavirha]: https://github.com/radoslavirha
-[issue]: https://github.com/radoslavirha/homeassistant-addons/issues
-[license-shield]: https://img.shields.io/github/license/radoslavirha/homeassistant-addons.svg
+[issue]: https://github.com/radoslavirha/ha-addons-repository/issues
+[license-shield]: https://img.shields.io/github/license/radoslavirha/ha-addons-repository.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [semver]: http://semver.org/spec/v2.0.0.html

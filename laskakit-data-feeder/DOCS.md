@@ -12,7 +12,7 @@ Homeassistant automation calls `laskakit_feeder_rain` rest_command service, add-
 
 ## Installation
 
-1) In Home Assistant go to `Settings` > `Add-ons` > `Add-on Store` > dots top-right > `Repositories` and add the repository URL `https://github.com/radoslavirha/homeassistant-addons.git`.
+1) In Home Assistant go to `Settings` > `Add-ons` > `Add-on Store` > dots top-right > `Repositories` and add the repository URL `https://github.com/radoslavirha/ha-addons-repository.git`.
 2) Click on `LaskaKit data feeder` > `INSTALL`.
 3) Click on `Configuration` and set required value of `laskakit_url`.
 4) Click on `START` after enabling `Watchdog` and optionally `Auto update`. Click on `LOGS` and `REFRESH` to see everything is working as expected.
