@@ -1,0 +1,19 @@
+---
+name: Radoslav's Home Assistant Add-on Repository Updater
+description: Tool for updating Home Assistant Add-on repository.
+
+inputs:
+  TOKEN:
+    description: GitHub token that is allowed to write/commit to the target repo
+    required: true
+  ADDON:
+    description: Slug of the add-on to update the repository for
+    required: false
+  FORCE:
+    description: Force repository update, even if no changes are detected
+    default: "false"
+    required: false
+
+runs:
+  using: docker
+  image: ../../../action/Dockerfile

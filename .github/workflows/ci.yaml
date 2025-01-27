@@ -1,0 +1,19 @@
+---
+name: CI
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  lint-yaml:
+    name: YAML lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run YAML lint
+        uses: frenck/action-yamllint@v1.5
+        with:
+          strict: true
