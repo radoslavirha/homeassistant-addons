@@ -12,16 +12,15 @@ Homeassistant automation calls `laskakit_feeder_rain` rest_command service, add-
 
 ## Installation
 
-1) In Home Assistant go to `Settings` > `Add-ons` > `Add-on Store` > dots top-right > `Repositories` and add the repository URL `https://github.com/radoslavirha/ha-addons-repository.git`.
+1) In Home Assistant go to `Settings` > `Add-ons` > `Add-on Store` > dots top-right > `Repositories` and add the repository URL `https://github.com/radoslavirha/homeassistant-addons.git`.
 2) Click on `LaskaKit data feeder` > `INSTALL`.
-3) Click on `Configuration` and set required value of `laskakit_url`.
+3) Click on `Configuration` and set required value of `laskaKitURL`.
 4) Click on `START` after enabling `Watchdog` and optionally `Auto update`. Click on `LOGS` and `REFRESH` to see everything is working as expected.
 
 ## Configuration
 
-- `laskakit_url` (required) - URL to LaskaKit
-- `image_to_console` (default false) - displays the ČHMÚ image with the picture where it is raining in the console
-- `log_level` (default info) - one of `debug` | `info` | `warn` | `error`
+- `laskaKitURL` (required) - URL to LaskaKit
+- `imageToConsole` (default false) - displays the ČHMÚ image with the picture where it is raining in the console
 
 ## Homeassistant service
 
@@ -89,8 +88,6 @@ Example cURL
 > ```
 
 </details>
-
-Swagger UI does not show parsed payload/params/query/headers validators. It's built for Joi, not Zod. Requested feature: https://github.com/hapi-swagger/hapi-swagger/issues/804#issue-1734729569
 
 ## Future
 
