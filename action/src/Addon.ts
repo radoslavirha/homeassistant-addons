@@ -3,7 +3,6 @@ import exec from '@actions/exec';
 import glob from '@actions/glob';
 import io from '@actions/io';
 import fs from 'fs';
-import yaml from 'js-yaml';
 import path from 'path';
 import semver from 'semver';
 import { RepositoryAddonConfiguration } from './types/RepositoryConfiguration.js';
@@ -11,6 +10,7 @@ import { CHANGELOG_FILE, CONFIG_FILE, CONFIG_FILES, DOCS_FILE, README_FILE } fro
 import { Github } from './Github.js';
 import { AddonConfiguration } from './types/AddonConfiguration.js';
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types';
+import { Utils } from './Utils.js';
 
 export class Addon {
     private github: Github;
@@ -68,9 +68,9 @@ export class Addon {
         try {
             const content = await fs.promises.readFile(configFile!, 'utf-8');
             if (configFile!.endsWith('.json')) {
-                configuration = JSON.parse(content);
+                configuration = Utils.parseJSON<AddonConfiguration>(content, configFile);
             } else {
-                configuration = yaml.load(content) as AddonConfiguration;
+                configuration = Utils.parseYaml<AddonConfiguration>(content, configFile);
             }
         } catch (error) {
             core.setFailed(`Parsing configuration for ${this.target} addon failed. Error: ${error}`);
@@ -94,9 +94,9 @@ export class Addon {
             try {
                 const config = await this.github.getContent(`${this.config.target}/${file}`, this.latestCommit.sha);
                 if (file!.endsWith('.json')) {
-                    this.remoteConfigurationFile = JSON.parse(config);
+                    this.remoteConfigurationFile = Utils.parseJSON<AddonConfiguration>(config, `${this.config.target}/${file}`);
                 } else {
-                    this.remoteConfigurationFile = yaml.load(config) as AddonConfiguration;
+                    this.remoteConfigurationFile = Utils.parseYaml<AddonConfiguration>(config, `${this.config.target}/${file}`);
                 }
                 break;
             } catch (error) {

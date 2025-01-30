@@ -1,9 +1,9 @@
 import core from '@actions/core';
-import yaml from 'js-yaml';
 import { RepositoryAddonConfiguration, RepositoryConfiguration } from './types/RepositoryConfiguration.js';
 import { ADDONS_YAML, CHANNEL_BETA, CHANNEL_EDGE, CHANNEL_STABLE, CHANNELS } from './Constant.js';
 import { Github } from './Github.js';
 import { Addon } from './Addon.js';
+import { Utils } from './Utils.js';
 
 export class Repository {
     private github: Github;
@@ -23,7 +23,7 @@ export class Repository {
         await this.github.clone(this.localPath);
         core.info(`Fetching ${ADDONS_YAML} file.`);
         const file = await this.github.getContent(ADDONS_YAML);
-        this.extractConfig(yaml.load(file) as RepositoryConfiguration, addon, force);
+        this.extractConfig(Utils.parseYaml<RepositoryConfiguration>(file, ADDONS_YAML), addon, force);
         await this.updateAddons();
         await this.commitChanges();
     }
