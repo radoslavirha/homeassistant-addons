@@ -1,4 +1,4 @@
-# Radoslav's Home Assistant Add-ons repository
+# Radoslav's Homeassistant Add-ons
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
@@ -20,14 +20,14 @@ https://github.com/radoslavirha/ha-addons-repository
 
 ### &#10003; [LaskaKit data feeder][addon-laskakit-data-feeder]
 
-![Latest Version][laskakit-data-feeder-version-shield]
-![Supports armhf Architecture][laskakit-data-feeder-armhf-shield]
-![Supports armv7 Architecture][laskakit-data-feeder-armv7-shield]
+[![Release][laskakit-data-feeder-version-shield]][laskakit-data-feeder-release]
 ![Supports aarch64 Architecture][laskakit-data-feeder-aarch64-shield]
 ![Supports amd64 Architecture][laskakit-data-feeder-amd64-shield]
+![Supports armv7 Architecture][laskakit-data-feeder-armv7-shield]
+![Supports armhf Architecture][laskakit-data-feeder-armhf-shield]
 ![Supports i386 Architecture][laskakit-data-feeder-i386-shield]
 
-Data Feeder for LaskaKit interactive map of Czech republic
+Data Feeder for LaskaKit Interactive Map of the Czech Republic
 
 [:books: LaskaKit data feeder add-on documentation][addon-doc-laskakit-data-feeder]
 
@@ -43,8 +43,7 @@ based on the following:
 
 ## Support
 
-You could also open an issue here on GitHub. Note, I use a separate
-GitHub repository for each add-on. Please ensure you are creating the issue
+You could also open an issue here on GitHub. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
 - [Open an issue for the add-on: LaskaKit data feeder][laskakit-data-feeder-issue]
@@ -57,19 +56,19 @@ Please contact [me Radoslav Irha][radoslavirha]:
 
 - email: <radoslav.irha@gmail.com>
 
-[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/tree/v0.2.7
-[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/blob/v0.2.7/README.md
-[laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addon-laskakit-data-feeder/issues
-[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/dynamic/json?label=Version&query=$.version&url=https://raw.githubusercontent.com/radoslavirha/ha-addons/master/addons/laskakit-data-feeder/config.json
-<!-- [laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-v0.2.5-blue.svg -->
+[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.3/addons/laskakit-data-feeder/README.md
+[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.3/addons/laskakit-data-feeder/DOCS.md
+[laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addons/issues
+[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-0.0.3-blue.svg
+[laskakit-data-feeder-release]: https://github.com/radoslavirha/ha-addons/releases/tag/laskakit-data-feeder@0.0.3
 [laskakit-data-feeder-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [laskakit-data-feeder-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[laskakit-data-feeder-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[laskakit-data-feeder-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [laskakit-data-feeder-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[laskakit-data-feeder-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[laskakit-data-feeder-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [radoslavirha]: https://github.com/radoslavirha
 [issue]: https://github.com/radoslavirha/ha-addons-repository/issues
-[license-shield]: https://img.shields.io/github/license/radoslavirha/ha-addons-repository.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
+[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [semver]: http://semver.org/spec/v2.0.0.html
