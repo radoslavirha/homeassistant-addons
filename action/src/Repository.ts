@@ -1,9 +1,22 @@
 import core from '@actions/core';
+import fs from 'fs';
+import Handlebars from 'handlebars';
+import path from 'path';
 import { RepositoryAddonConfiguration, RepositoryConfiguration } from './types/RepositoryConfiguration.js';
 import { ADDONS_YAML, CHANNEL_BETA, CHANNEL_EDGE, CHANNEL_STABLE, CHANNELS } from './Constant.js';
 import { Github } from './Github.js';
 import { Addon } from './Addon.js';
 import { Utils } from './Utils.js';
+import { RepositoryTemplateData } from './types/RepositoryTemplateData.js';
+
+Handlebars.registerHelper('ifIn', function(elem, list, options) {
+    if (list && list.indexOf(elem) > -1) {
+        // @ts-ignore
+        return options.fn(this);
+    }
+    // @ts-ignore
+    return options.inverse(this);
+});
 
 export class Repository {
     private github: Github;
@@ -25,6 +38,7 @@ export class Repository {
         const file = await this.github.getContent(ADDONS_YAML);
         this.extractConfig(Utils.parseYaml<RepositoryConfiguration>(file, ADDONS_YAML), addon, force);
         await this.updateAddons();
+        await this.generateReadme();
         await this.commitChanges();
     }
 
@@ -60,6 +74,35 @@ export class Repository {
         for (const addon of this.addons) {
             await addon.update();
         }
+    }
+
+    private async generateReadme(): Promise<void> {
+        const templateData = await this.getTemplateData();
+
+        const readmeTemplate = await fs.promises.readFile(path.join(this.localPath, '.README.hbs'), 'utf8');
+
+        const template = Handlebars.compile(readmeTemplate);
+        console.log(templateData);
+        const result = template(templateData);
+    
+        await fs.promises.writeFile(path.join(this.localPath, 'README.md'), result);
+    }
+
+    private async getTemplateData(): Promise<RepositoryTemplateData> {
+        const templateData: RepositoryTemplateData = {
+            repository: this.repositoryWithOwner,
+            channel: this.channel,
+            addons: [],
+            archs: ['aarch64', 'amd64', 'armhf', 'armv7', 'i386']
+        };
+
+        for (const addon of this.addons) {
+            templateData.addons.push(
+                await addon.getTemplateData()
+            );
+        }
+
+        return Promise.resolve(templateData);
     }
 
     private async commitChanges(): Promise<void> {

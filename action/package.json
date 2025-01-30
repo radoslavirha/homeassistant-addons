@@ -19,6 +19,7 @@
     "@swc/core": "^1.10.8",
     "@swc/helpers": "^0.5.15",
     "cross-env": "^7.0.3",
+    "handlebars": "^4.7.8",
     "js-yaml": "^4.1.0",
     "semver": "^7.6.3",
     "simple-git": "^3.27.0"

@@ -5,4 +5,5 @@ export interface AddonConfiguration {
     slug: string;
     url: string;
     arch: ('aarch64' | 'amd64' | 'armv7' | 'i386' | 'armhf')[];
+    image: string;
 }

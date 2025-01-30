@@ -1,5 +1,4 @@
 import core from '@actions/core';
-import exec from '@actions/exec';
 import glob from '@actions/glob';
 import io from '@actions/io';
 import fs from 'fs';
@@ -11,6 +10,7 @@ import { Github } from './Github.js';
 import { AddonConfiguration } from './types/AddonConfiguration.js';
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types';
 import { Utils } from './Utils.js';
+import { AddonTemplateData } from './types/AddonTemplateData.js';
 
 export class Addon {
     private github: Github;
@@ -35,10 +35,20 @@ export class Addon {
         await this.loadConfiguration();
         await this.loadLatestInfo();
 
-        // if (this.needsUpdate()) {
+        if (this.needsUpdate()) {
             await this.removeFiles();
-            await this.copyFiles();
-        // }
+            await this.copyStaticFiles();
+        }
+    }
+
+    public getTemplateData(): AddonTemplateData {
+        const latest = this.latestConfiguration ?? this.currentConfiguration;
+        
+        return {
+            repository: this.config.repository,
+            target: this.target,
+            ...latest
+        };
     }
 
     /**
@@ -68,9 +78,9 @@ export class Addon {
         try {
             const content = await fs.promises.readFile(configFile!, 'utf-8');
             if (configFile!.endsWith('.json')) {
-                configuration = Utils.parseJSON<AddonConfiguration>(content, configFile);
+                configuration = Utils.parseJSON<AddonConfiguration>(content, configFile!);
             } else {
-                configuration = Utils.parseYaml<AddonConfiguration>(content, configFile);
+                configuration = Utils.parseYaml<AddonConfiguration>(content, configFile!);
             }
         } catch (error) {
             core.setFailed(`Parsing configuration for ${this.target} addon failed. Error: ${error}`);
@@ -120,7 +130,8 @@ export class Addon {
             description: configuration.description,
             slug: configuration.slug,
             url: configuration.url,
-            arch: configuration.arch
+            arch: configuration.arch,
+            image: configuration.image,
         };
     }
 
@@ -162,7 +173,7 @@ export class Addon {
         core.info(`Files removed for ${this.target} addon.`);
     }
 
-    private async copyFiles(): Promise<void> {
+    private async copyStaticFiles(): Promise<void> {
         core.info(`Copying files for ${this.target} addon.`);
         try {
             await fs.promises.writeFile(
@@ -183,7 +194,7 @@ export class Addon {
                     'utf-8'
                 );
             } catch (error) {
-                core.setFailed(`Failed to write ${file} for ${this.target} addon. Error: ${error}`);
+                core.error(`Failed to write ${file} for ${this.target} addon. Error: ${error}`);
             }
         }
         core.info(`Files copied for ${this.target} addon.`);
