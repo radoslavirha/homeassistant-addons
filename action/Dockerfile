@@ -3,6 +3,7 @@ FROM node:22.13-slim
 RUN apt-get update                          && \
     apt-get upgrade -y                      && \
     apt-get install -y git                  && \
+    npm install -g corepack@0.31.0          && \
     corepack enable pnpm
 
 WORKDIR /usr/src/app
