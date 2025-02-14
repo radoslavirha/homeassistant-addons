@@ -16,7 +16,8 @@
   "ports": {
     "4000/tcp": 7001
   },
-  "options": {},
-  "schema": {},
+  "ports_description": {
+    "4000/tcp": "REST API port"
+  },
   "image": "radoslavirha/ha-addon-laskakit-data-feeder-{arch}"
 }
