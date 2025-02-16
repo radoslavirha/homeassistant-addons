@@ -20,6 +20,10 @@ LaskaKit should call REST API provided by this addon to get RGBA color for each 
 
 ## Add-on REST API
 
+Addon is configured to run on port 7001 on the host machine supervised by HA (check ports in config.json).
+
+Base URL: <http://{HOST}:7001>
+
 <details>
   <summary><code>GET</code> <code><b>/v1/radar/cities</b></code> <code>(Returns array of district cities with corresponding RGBA color for LEDs)</code></summary>
 

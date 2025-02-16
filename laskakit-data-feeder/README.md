@@ -33,8 +33,8 @@ For an addon issue or idea [open an issue here][github-issue]
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-0.0.4-blue.svg
-[github-release]: https://github.com/radoslavirha/ha-addons/releases/tag/laskakit-data-feeder@0.0.4
+[release-shield]: https://img.shields.io/badge/version-0.0.5-blue.svg
+[github-release]: https://github.com/radoslavirha/ha-addons/releases/tag/laskakit-data-feeder@0.0.5
 [github-issue]: https://github.com/radoslavirha/ha-addons/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://opensource.org/licenses/MIT

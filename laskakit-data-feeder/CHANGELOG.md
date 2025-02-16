@@ -1,5 +1,11 @@
 # laskakit-data-feeder
 
+## 0.0.5
+
+### Patch Changes
+
+- [`f438539`](https://github.com/radoslavirha/ha-addons/commit/f4385390c8a2f60dc5613e4877ccad9b97cd5769) Thanks [@radoslavirha](https://github.com/radoslavirha)! - Swagger docs
+
 ## 0.0.4
 
 ### Patch Changes

@@ -56,11 +56,11 @@ Please contact [me Radoslav Irha][radoslavirha]:
 
 - email: <radoslav.irha@gmail.com>
 
-[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.4/addons/laskakit-data-feeder/README.md
-[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.4/addons/laskakit-data-feeder/DOCS.md
+[addon-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.5/addons/laskakit-data-feeder/README.md
+[addon-doc-laskakit-data-feeder]: https://github.com/radoslavirha/ha-addons/blob/laskakit-data-feeder@0.0.5/addons/laskakit-data-feeder/DOCS.md
 [laskakit-data-feeder-issue]: https://github.com/radoslavirha/ha-addons/issues
-[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-0.0.4-blue.svg
-[laskakit-data-feeder-release]: https://github.com/radoslavirha/ha-addons/releases/tag/laskakit-data-feeder@0.0.4
+[laskakit-data-feeder-version-shield]: https://img.shields.io/badge/version-0.0.5-blue.svg
+[laskakit-data-feeder-release]: https://github.com/radoslavirha/ha-addons/releases/tag/laskakit-data-feeder@0.0.5
 [laskakit-data-feeder-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [laskakit-data-feeder-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [laskakit-data-feeder-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
